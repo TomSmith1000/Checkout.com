@@ -1,0 +1,105 @@
+{
+	"info": {
+		"_postman_id": "64f1ae21-7c07-4e2d-bf7e-b48bdb3d465a",
+		"name": "Checkout.com",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ProcessCardPayment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"MerchantId\": \"123\",\r\n    \"Amount\": 1000,\r\n    \"Currency\": \"GBP\",\r\n    \"Reference\": \"XXX-YYY\",\r\n    \"CardDetails\": {\r\n        \"CardNumber\": \"4716483443976548\",\r\n        \"ExpiryMonth\": 01,\r\n        \"ExpiryYear\": 21,\r\n        \"CVV\": 579\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:55283/api/Payment",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "55283",
+					"path": [
+						"api",
+						"Payment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetPaymentDetails",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"merchantId\": \"1234\",\r\n    \"paymentId\": \"10001\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:55283/api/Payment?paymentId=667b5037-f116-4919-9a14-90a23f5e50a9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "55283",
+					"path": [
+						"api",
+						"Payment"
+					],
+					"query": [
+						{
+							"key": "paymentId",
+							"value": "667b5037-f116-4919-9a14-90a23f5e50a9"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MockBankProcessTransaction",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"MerchantId\": \"123\",\r\n    \"TransactionTime\": \"{01/01/0001 00:00:00}\",\r\n    \"Amount\": 100,\r\n    \"Currency\": \"GBP\",\r\n    \"Reference\": \"Shoes\",\r\n    \"CardDetails\": {\r\n        \"CardNumber\": \"4716483443976548\",\r\n        \"ExpiryMonth\": \"01\",\r\n        \"ExpiryYear\": \"21\",\r\n        \"CVV\": \"579\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:57453/api/Transactions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "57453",
+					"path": [
+						"api",
+						"Transactions"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
