@@ -1,0 +1,6 @@
+D:\smith\git\Checkout\Checkout.Shared\bin\Debug\Checkout.Shared.dll
+D:\smith\git\Checkout\Checkout.Shared\bin\Debug\Checkout.Shared.pdb
+D:\smith\git\Checkout\Checkout.Shared\obj\Debug\Checkout.Shared.csproj.CoreCompileInputs.cache
+D:\smith\git\Checkout\Checkout.Shared\obj\Debug\Checkout.Shared.dll
+D:\smith\git\Checkout\Checkout.Shared\obj\Debug\Checkout.Shared.pdb
+D:\smith\git\Checkout\Checkout.Shared\obj\Debug\Checkout.Shared.csprojAssemblyReference.cache

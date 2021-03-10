@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Models.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Payment">
+    <Key>
+      <PropertyRef Name="PaymentId" />
+    </Key>
+    <Property Name="PaymentId" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="TransactionId" Type="varchar" MaxLength="255" />
+    <Property Name="MerchantId" Type="varchar" MaxLength="255" />
+    <Property Name="TransactionTime" Type="varchar" MaxLength="255" />
+    <Property Name="Amount" Type="int" />
+    <Property Name="Currency" Type="varchar" MaxLength="255" />
+    <Property Name="Reference" Type="varchar" MaxLength="255" />
+    <Property Name="Status" Type="varchar" MaxLength="255" />
+    <Property Name="CardNumber" Type="varchar" MaxLength="255" />
+    <Property Name="ExpiryMonth" Type="int" />
+    <Property Name="ExpiryYear" Type="int" />
+  </EntityType>
+  <EntityContainer Name="ModelsStoreContainer">
+    <EntitySet Name="Payment" EntityType="Self.Payment" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

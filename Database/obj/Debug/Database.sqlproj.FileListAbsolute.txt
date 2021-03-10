@@ -1,0 +1,6 @@
+D:\smith\git\Checkout\Database\bin\Debug\Database.dacpac
+D:\smith\git\Checkout\Database\bin\Debug\Database.dll
+D:\smith\git\Checkout\Database\bin\Debug\Database.pdb
+D:\smith\git\Checkout\Database\obj\Debug\Database.sqlprojAssemblyReference.cache
+D:\smith\git\Checkout\Database\obj\Debug\Database.dll
+D:\smith\git\Checkout\Database\obj\Debug\Database.pdb
